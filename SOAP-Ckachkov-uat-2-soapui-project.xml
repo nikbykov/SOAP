@@ -1,0 +1,1322 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="3977423a-55d9-4e48-bc23-ad06beeab134" activeEnvironment="Default" name="SOAP_Ckachkov_uat_2" resourceRoot="" soapui-version="5.6.0" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="669c2d5e-35cf-49c2-9a6b-77f08f445335" wsaVersion="NONE" name="WebMonoSoapBinding" type="wsdl" bindingName="{http://monopoly.su/}WebMonoSoapBinding" soapVersion="1_1" anonymous="optional" definition="http://dev-1csrv-01/skachkov_uat_2_dev/ws/wsMono.1cws?wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache/><con:endpoints><con:endpoint>http://dev-1csrv-01/skachkov_uat_2_dev/ws/wsMono.1cws</con:endpoint></con:endpoints><con:operation id="e932400f-c15b-4ecc-b12a-b6319a23c339" isOneWay="false" action="http://monopoly.su/#WebMono:CreateDTP" name="CreateDTP" bindingOperationName="CreateDTP" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="08345baa-ed6d-4836-bd39-da5ebeec6147" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://dev-1csrv-01/skachkov_uat_2_dev/ws/wsMono.1cws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:mon="http://monopoly.su/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <mon:CreateDTP>\r
+         <mon:Time>?</mon:Time>\r
+         <mon:TransportId>?</mon:TransportId>\r
+         <mon:DriverId>?</mon:DriverId>\r
+         <mon:Point>?</mon:Point>\r
+         <mon:Description>?</mon:Description>\r
+      </mon:CreateDTP>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://monopoly.su/#WebMono:CreateDTP"/></con:call></con:operation><con:operation id="7a7889c2-c3d1-4a28-85ad-e7301ef07022" isOneWay="false" action="http://monopoly.su/#WebMono:GetAnswersForTasksOfFuelCostOverrun" name="GetAnswersForTasksOfFuelCostOverrun" bindingOperationName="GetAnswersForTasksOfFuelCostOverrun" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="df2c9011-9868-4024-afa2-dc7504863762" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://dev-1csrv-01/skachkov_uat_2_dev/ws/wsMono.1cws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:mon="http://monopoly.su/" xmlns:ord="http://monopoly.su/Order">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <mon:GetAnswersForTasksOfFuelCostOverrun>\r
+         <mon:WaybillId>?</mon:WaybillId>\r
+         <mon:FuelOverrunQuestions>\r
+            <!--Zero or more repetitions:-->\r
+            <ord:FuelOverrunQuestionLine>\r
+               <ord:Reason>?</ord:Reason>\r
+               <ord:Amount>?</ord:Amount>\r
+               <ord:Comment>?</ord:Comment>\r
+            </ord:FuelOverrunQuestionLine>\r
+         </mon:FuelOverrunQuestions>\r
+         <mon:User>?</mon:User>\r
+         <mon:XMLBody>?</mon:XMLBody>\r
+      </mon:GetAnswersForTasksOfFuelCostOverrun>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://monopoly.su/#WebMono:GetAnswersForTasksOfFuelCostOverrun"/></con:call></con:operation><con:operation id="5221288f-ea3f-434b-b187-bd801096ba4b" isOneWay="false" action="http://monopoly.su/#WebMono:GetDriverTaskResult" name="GetDriverTaskResult" bindingOperationName="GetDriverTaskResult" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="6a29caaf-ea25-4915-9b51-ad84d7a1980d" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://dev-1csrv-01/skachkov_uat_2_dev/ws/wsMono.1cws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:mon="http://monopoly.su/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <mon:GetDriverTaskResult>\r
+         <mon:snils>?</mon:snils>\r
+         <mon:answerTaskTime>?</mon:answerTaskTime>\r
+         <mon:expensesItemGuid>?</mon:expensesItemGuid>\r
+      </mon:GetDriverTaskResult>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://monopoly.su/#WebMono:GetDriverTaskResult"/></con:call></con:operation><con:operation id="2da2c12c-65d7-4836-8fa3-250e56dbf322" isOneWay="false" action="http://monopoly.su/#WebMono:GetFullTransportInformation" name="GetFullTransportInformation" bindingOperationName="GetFullTransportInformation" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="5a44ebd5-a899-45d3-8404-564044f790f9" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://dev-1csrv-01/skachkov_uat_2_dev/ws/wsMono.1cws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:mon="http://monopoly.su/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <mon:GetFullTransportInformation>\r
+         <mon:Number>?</mon:Number>\r
+         <mon:Document>?</mon:Document>\r
+         <mon:Moment>?</mon:Moment>\r
+      </mon:GetFullTransportInformation>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://monopoly.su/#WebMono:GetFullTransportInformation"/></con:call></con:operation><con:operation id="ebecfccb-0b0c-4acc-94b0-a43eb21aded0" isOneWay="false" action="http://monopoly.su/#WebMono:GetRepairOrderAgreement" name="GetRepairOrderAgreement" bindingOperationName="GetRepairOrderAgreement" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="d2b81a72-e8a2-4f73-b7f3-431bce1de366" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://dev-1csrv-01/skachkov_uat_2_dev/ws/wsMono.1cws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:mon="http://monopoly.su/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <mon:GetRepairOrderAgreement>\r
+         <mon:RepairOrderKey>?</mon:RepairOrderKey>\r
+         <mon:StartDate>?</mon:StartDate>\r
+         <mon:AgreementValue>?</mon:AgreementValue>\r
+      </mon:GetRepairOrderAgreement>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://monopoly.su/#WebMono:GetRepairOrderAgreement"/></con:call></con:operation><con:operation id="9cb20b69-48eb-472b-b5ee-99efc15959ef" isOneWay="false" action="http://monopoly.su/#WebMono:GetRepairOrderFactDates" name="GetRepairOrderFactDates" bindingOperationName="GetRepairOrderFactDates" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="0271ba9c-8b4f-4969-98e4-d101bca73566" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://dev-1csrv-01/skachkov_uat_2_dev/ws/wsMono.1cws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:mon="http://monopoly.su/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <mon:GetRepairOrderFactDates>\r
+         <mon:RepairOrderKey>?</mon:RepairOrderKey>\r
+         <mon:MomentFromFact>?</mon:MomentFromFact>\r
+         <mon:MomentToFact>?</mon:MomentToFact>\r
+         <mon:MomentFromFactError>?</mon:MomentFromFactError>\r
+         <mon:MomentToFactError>?</mon:MomentToFactError>\r
+      </mon:GetRepairOrderFactDates>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://monopoly.su/#WebMono:GetRepairOrderFactDates"/></con:call></con:operation><con:operation id="7cdffe1c-2834-47ba-82be-05847d22dbb3" isOneWay="false" action="http://monopoly.su/#WebMono:GetTimeSheet" name="GetTimeSheet" bindingOperationName="GetTimeSheet" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="e834e307-7117-4a11-9d35-4c3368219314" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://dev-1csrv-01/skachkov_uat_2_dev/ws/wsMono.1cws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:mon="http://monopoly.su/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <mon:GetTimeSheet>\r
+         <mon:StartDate>?</mon:StartDate>\r
+         <mon:EndDate>?</mon:EndDate>\r
+         <mon:Employers>?</mon:Employers>\r
+         <mon:ValueWork>?</mon:ValueWork>\r
+         <mon:ValueRest>?</mon:ValueRest>\r
+         <mon:PeriodUnworkingEmpty>?</mon:PeriodUnworkingEmpty>\r
+      </mon:GetTimeSheet>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://monopoly.su/#WebMono:GetTimeSheet"/></con:call></con:operation><con:operation id="98f82be5-977d-415b-9a3c-7d94be1c0543" isOneWay="false" action="http://monopoly.su/#WebMono:GetTransportInformation" name="GetTransportInformation" bindingOperationName="GetTransportInformation" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="5b8855a6-212c-4055-95e2-171b232efeb8" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://dev-1csrv-01/skachkov_uat_2_dev/ws/wsMono.1cws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:mon="http://monopoly.su/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <mon:GetTransportInformation>\r
+         <mon:Number>?</mon:Number>\r
+         <mon:StartDate>?</mon:StartDate>\r
+         <mon:EndDate>?</mon:EndDate>\r
+      </mon:GetTransportInformation>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://monopoly.su/#WebMono:GetTransportInformation"/></con:call></con:operation><con:operation id="0832de67-b5ac-43e6-867f-ddfbbe3e340a" isOneWay="false" action="http://monopoly.su/#WebMono:GetWaybillInformation" name="GetWaybillInformation" bindingOperationName="GetWaybillInformation" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="d8fce4c0-44b0-417b-9622-f64e97cf2254" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://dev-1csrv-01/skachkov_uat_2_dev/ws/wsMono.1cws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:mon="http://monopoly.su/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <mon:GetWaybillInformation>\r
+         <mon:id>?</mon:id>\r
+      </mon:GetWaybillInformation>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://monopoly.su/#WebMono:GetWaybillInformation"/></con:call></con:operation><con:operation id="e324f52e-d167-4731-b5be-6b9f3dbbb87f" isOneWay="false" action="http://monopoly.su/#WebMono:RequestForWaybill" name="RequestForWaybill" bindingOperationName="RequestForWaybill" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="704d6945-8dcd-41c6-a03b-cf5c7ad9d727" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://dev-1csrv-01/skachkov_uat_2_dev/ws/wsMono.1cws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:mon="http://monopoly.su/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <mon:RequestForWaybill>\r
+         <mon:Number>?</mon:Number>\r
+         <mon:Date>?</mon:Date>\r
+      </mon:RequestForWaybill>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://monopoly.su/#WebMono:RequestForWaybill"/></con:call></con:operation><con:operation id="1fdda8ce-ef33-4e9d-b6f5-0e673e2042fd" isOneWay="false" action="http://monopoly.su/#WebMono:SaveGPS" name="SaveGPS" bindingOperationName="SaveGPS" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="69976592-e4ca-47e1-a52a-714070a70327" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://dev-1csrv-01/skachkov_uat_2_dev/ws/wsMono.1cws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:mon="http://monopoly.su/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <mon:SaveGPS>\r
+         <mon:guid>?</mon:guid>\r
+         <mon:name>?</mon:name>\r
+         <mon:id>?</mon:id>\r
+         <mon:phone>?</mon:phone>\r
+      </mon:SaveGPS>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://monopoly.su/#WebMono:SaveGPS"/></con:call></con:operation><con:operation id="362d441f-caef-4fc5-b82d-caea55182cb4" isOneWay="false" action="http://monopoly.su/#WebMono:WriteEmployeeZup" name="WriteEmployeeZup" bindingOperationName="WriteEmployeeZup" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="a5e4e5b1-0611-4c21-9af0-720397bf4e11" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://dev-1csrv-01/skachkov_uat_2_dev/ws/wsMono.1cws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:mon="http://monopoly.su/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <mon:WriteEmployeeZup>\r
+         <mon:PersonalInfo>?</mon:PersonalInfo>\r
+         <mon:DocumentsInfo>?</mon:DocumentsInfo>\r
+         <mon:EmployeeInfo>?</mon:EmployeeInfo>\r
+         <mon:AddititionalInfo>?</mon:AddititionalInfo>\r
+         <mon:PassportlInfo>?</mon:PassportlInfo>\r
+      </mon:WriteEmployeeZup>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://monopoly.su/#WebMono:WriteEmployeeZup"/></con:call></con:operation><con:operation id="9acf1de7-217b-4ba0-b906-58ba431f3038" isOneWay="false" action="http://monopoly.su/#WebMono:WriteItemCost" name="WriteItemCost" bindingOperationName="WriteItemCost" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="b8a53e1a-5b1d-4e27-b4a9-c0bf76d01ffc" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://dev-1csrv-01/skachkov_uat_2_dev/ws/wsMono.1cws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:mon="http://monopoly.su/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <mon:WriteItemCost>\r
+         <mon:id>?</mon:id>\r
+         <mon:name>?</mon:name>\r
+         <mon:delete>?</mon:delete>\r
+      </mon:WriteItemCost>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://monopoly.su/#WebMono:WriteItemCost"/></con:call></con:operation><con:operation id="3d46ade6-b631-4863-8d2c-fbf07be32d0f" isOneWay="false" action="http://monopoly.su/#WebMono:WritePersonZup" name="WritePersonZup" bindingOperationName="WritePersonZup" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="6716151f-831d-47a2-bb77-e182d2315f16" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://dev-1csrv-01/skachkov_uat_2_dev/ws/wsMono.1cws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:mon="http://monopoly.su/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <mon:WritePersonZup>\r
+         <mon:PersonalInfo>?</mon:PersonalInfo>\r
+         <mon:PassportData>?</mon:PassportData>\r
+         <mon:ContactInfo>?</mon:ContactInfo>\r
+         <mon:SNP>?</mon:SNP>\r
+         <mon:AddititionalInfo>?</mon:AddititionalInfo>\r
+      </mon:WritePersonZup>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://monopoly.su/#WebMono:WritePersonZup"/></con:call></con:operation><con:operation id="37f0d4cd-fefc-45ca-8d41-cca1409d286b" isOneWay="false" action="http://monopoly.su/#WebMono:WriteTruckDriverLink" name="WriteTruckDriverLink" bindingOperationName="WriteTruckDriverLink" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="7d247d34-ad9b-4390-ab9d-b8df6fc9b82f" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://dev-1csrv-01/skachkov_uat_2_dev/ws/wsMono.1cws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:mon="http://monopoly.su/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <mon:WriteTruckDriverLink>\r
+         <mon:transportId>?</mon:transportId>\r
+         <mon:driverZupId>?</mon:driverZupId>\r
+         <mon:delete>?</mon:delete>\r
+      </mon:WriteTruckDriverLink>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://monopoly.su/#WebMono:WriteTruckDriverLink"/></con:call></con:operation><con:operation id="6314d4e3-f0b6-4c93-9e9f-4573ff40ddb0" isOneWay="false" action="http://monopoly.su/#WebMono:WriteTruckGpsLink" name="WriteTruckGpsLink" bindingOperationName="WriteTruckGpsLink" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="b0920578-10c3-4ea0-846b-5ed684a2c56d" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://dev-1csrv-01/skachkov_uat_2_dev/ws/wsMono.1cws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:mon="http://monopoly.su/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <mon:WriteTruckGpsLink>\r
+         <mon:linkRowId>?</mon:linkRowId>\r
+         <mon:transportId>?</mon:transportId>\r
+         <mon:gpsNavId>?</mon:gpsNavId>\r
+         <mon:startDate>?</mon:startDate>\r
+         <mon:delete>?</mon:delete>\r
+      </mon:WriteTruckGpsLink>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://monopoly.su/#WebMono:WriteTruckGpsLink"/></con:call></con:operation><con:operation id="6b0fcae2-ae32-4cb1-8640-bc2230c1c1f1" isOneWay="false" action="http://monopoly.su/#WebMono:WriteTruckTrailerLink" name="WriteTruckTrailerLink" bindingOperationName="WriteTruckTrailerLink" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="d37dae45-93fd-4507-af93-bbc7559108cc" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://dev-1csrv-01/skachkov_uat_2_dev/ws/wsMono.1cws</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:mon="http://monopoly.su/">\r
+   <soapenv:Header/>\r
+   <soapenv:Body>\r
+      <mon:WriteTruckTrailerLink>\r
+         <mon:linkRowId>?</mon:linkRowId>\r
+         <mon:truckId>?</mon:truckId>\r
+         <mon:trailerId>?</mon:trailerId>\r
+         <mon:startDate>?</mon:startDate>\r
+         <mon:endDate>?</mon:endDate>\r
+         <mon:delete>?</mon:delete>\r
+      </mon:WriteTruckTrailerLink>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://monopoly.su/#WebMono:WriteTruckTrailerLink"/></con:call></con:operation></con:interface><con:interface xsi:type="con:WsdlInterface" id="d9ab4db9-2d14-4773-a1c0-121ebc0dba9b" wsaVersion="NONE" name="WebMonoSoap12Binding" type="wsdl" bindingName="{http://monopoly.su/}WebMonoSoap12Binding" soapVersion="1_2" anonymous="optional" definition="http://dev-1csrv-01/skachkov_uat_2_dev/ws/wsMono.1cws?wsdl" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="http://dev-1csrv-01/skachkov_uat_2_dev/ws/wsMono.1cws?wsdl"><con:part><con:url>http://dev-1csrv-01/skachkov_uat_2_dev/ws/wsMono.1cws?wsdl</con:url><con:content><![CDATA[<definitions name="WebMono" targetNamespace="http://monopoly.su/" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soap12bind="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:soapbind="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:tns="http://monopoly.su/" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsd1="http://monopoly.su/" xmlns:xsd2="http://monopoly.su/Order">
+  <types>
+    <xs:schema targetNamespace="http://monopoly.su/Order" attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:tns="http://monopoly.su/Order" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:complexType name="AgreementsLine">
+        <xs:sequence>
+          <xs:element name="MomentCreation" type="xs:dateTime"/>
+          <xs:element name="Value" type="xs:float"/>
+          <xs:element name="Comment" type="xs:string"/>
+          <xs:element name="MomentSolution" type="xs:dateTime"/>
+          <xs:element name="User" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="ConsumptionPeriodsLine">
+        <xs:sequence>
+          <xs:element name="DateStart" type="xs:dateTime" nillable="true"/>
+          <xs:element name="DateEnd" type="xs:dateTime" nillable="true"/>
+          <xs:element name="Mileage" type="xs:float" nillable="true"/>
+          <xs:element name="Normative" type="xs:float" nillable="true"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="ConsumptionTableLine">
+        <xs:sequence>
+          <xs:element name="TruckTrailerKey" type="xs:string" nillable="true"/>
+          <xs:element name="FuelType" type="xs:string" nillable="true"/>
+          <xs:element name="RestStart" type="xs:float" nillable="true"/>
+          <xs:element name="RestEnd" type="xs:float" nillable="true"/>
+          <xs:element name="Issued" type="xs:float" nillable="true"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="CreateDTPMethodResult">
+        <xs:sequence>
+          <xs:element name="Ok" type="xs:boolean"/>
+          <xs:element name="ErrorMessage" type="xs:string"/>
+          <xs:element name="DocumentNumber" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="FuelOverrunQuestionLine">
+        <xs:sequence>
+          <xs:element name="Reason" type="xs:string"/>
+          <xs:element name="Amount" type="xs:int"/>
+          <xs:element name="Comment" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="FuelOverrunQuestions">
+        <xs:sequence>
+          <xs:element name="FuelOverrunQuestionLine" type="tns:FuelOverrunQuestionLine" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="GetDriverTaskResultMethodResult">
+        <xs:sequence>
+          <xs:element name="Ok" type="xs:boolean"/>
+          <xs:element name="ErrorMessage" type="xs:string" nillable="true"/>
+          <xs:element name="Result" type="xs:boolean" nillable="true"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="GetFullTransportInformationMethodResult">
+        <xs:sequence>
+          <xs:element name="Ok" type="xs:boolean"/>
+          <xs:element name="ErrorMessage" type="xs:string" nillable="true"/>
+          <xs:element name="VIN" type="xs:string" nillable="true"/>
+          <xs:element name="TruckNumber" type="xs:string" nillable="true"/>
+          <xs:element name="DriverName" type="xs:string" nillable="true"/>
+          <xs:element name="DriverDOB" type="xs:date" nillable="true"/>
+          <xs:element name="Number" type="xs:string" nillable="true"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="GetTimeSheetMethodResult">
+        <xs:sequence>
+          <xs:element name="Ok" type="xs:boolean"/>
+          <xs:element name="ErrorMessage" type="xs:string" nillable="true"/>
+          <xs:element name="TimeSheet" type="xs:string" nillable="true"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="GetTransportInformationMethodResult">
+        <xs:sequence>
+          <xs:element name="Ok" type="xs:boolean"/>
+          <xs:element name="ErrorMessage" type="xs:string" nillable="true"/>
+          <xs:element name="StartDate" type="xs:dateTime" nillable="true"/>
+          <xs:element name="EndDate" type="xs:dateTime" nillable="true"/>
+          <xs:element name="TrailerTypes" type="tns:TrailerTypesLine" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="GetWaybillInformationResult">
+        <xs:sequence>
+          <xs:element name="Ok" type="xs:boolean"/>
+          <xs:element name="ErrorMessage" type="xs:string" nillable="true"/>
+          <xs:element name="DateStart" type="xs:dateTime" nillable="true"/>
+          <xs:element name="DateEnd" type="xs:dateTime" nillable="true"/>
+          <xs:element name="Driver" type="xs:string" nillable="true"/>
+          <xs:element name="ConsumptionFull" type="xs:float" nillable="true"/>
+          <xs:element name="ConsumptionNormative" type="xs:float" nillable="true"/>
+          <xs:element name="ConsumptionAverage" type="xs:float" nillable="true"/>
+          <xs:element name="ConsumptionPlus" type="xs:float" nillable="true"/>
+          <xs:element name="ConsumptionRef" type="xs:float" nillable="true"/>
+          <xs:element name="TimeRef" type="xs:float" nillable="true"/>
+          <xs:element name="ConsumptionUnit" type="xs:float" nillable="true"/>
+          <xs:element name="LastWaybills" type="tns:LastWaybillsLine" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+          <xs:element name="RepairOrders" type="tns:RepairOrdersLine" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+          <xs:element name="Underfillings" type="tns:UnderfillingsLine" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+          <xs:element name="FuelStartTruck" type="xs:float" nillable="true"/>
+          <xs:element name="FuelStartTrailer" type="xs:float" nillable="true"/>
+          <xs:element name="FuelEndTruck" type="xs:float" nillable="true"/>
+          <xs:element name="FuelEndTrailer" type="xs:float" nillable="true"/>
+          <xs:element name="Mileage" type="xs:float" nillable="true"/>
+          <xs:element name="OdometrEnd" type="xs:float" nillable="true"/>
+          <xs:element name="Orders" type="tns:OrdersLine" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+          <xs:element name="DriverId" type="xs:string" nillable="true"/>
+          <xs:element name="ConsumptionTable" type="tns:ConsumptionTableLine" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+          <xs:element name="ConsumptionFullTrailer" type="xs:float" nillable="true"/>
+          <xs:element name="ConsumptionNormativeTrailer" type="xs:float" nillable="true"/>
+          <xs:element name="ConsumptionPlusTrailer" type="xs:float" nillable="true"/>
+          <xs:element name="Periods" type="tns:ConsumptionPeriodsLine" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+          <xs:element name="Agreements" type="tns:AgreementsLine" nillable="true" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="GetWaybillNumberResult">
+        <xs:sequence>
+          <xs:element name="Ok" type="xs:boolean"/>
+          <xs:element name="ErrorMessage" type="xs:string" nillable="true"/>
+          <xs:element name="Number" type="xs:string" nillable="true"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="LastWaybillsLine">
+        <xs:sequence>
+          <xs:element name="Number" type="xs:string"/>
+          <xs:element name="DateStart" type="xs:dateTime"/>
+          <xs:element name="DateEnd" type="xs:dateTime"/>
+          <xs:element name="Driver" type="xs:string"/>
+          <xs:element name="FuelReturned" type="xs:float"/>
+          <xs:element name="ConsumptionPlus" type="xs:float"/>
+          <xs:element name="ReasonConsumptionPlus" type="xs:string"/>
+          <xs:element name="ConsumptionMinus" type="xs:float"/>
+          <xs:element name="CAN" type="xs:decimal"/>
+          <xs:element name="DUT" type="xs:decimal"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="MethodResult">
+        <xs:sequence>
+          <xs:element name="Ok" type="xs:boolean"/>
+          <xs:element name="ErrorMessage" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="OrdersLine">
+        <xs:sequence>
+          <xs:element name="Number" type="xs:string"/>
+          <xs:element name="Date" type="xs:dateTime"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="RepairOrdersLine">
+        <xs:sequence>
+          <xs:element name="Number" type="xs:string"/>
+          <xs:element name="Date" type="xs:dateTime"/>
+          <xs:element name="DateCompletion" type="xs:dateTime"/>
+          <xs:element name="DaysProblem" type="xs:integer"/>
+          <xs:element name="ConsumptionPlusNormative" type="xs:float"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="TrailerTypesLine">
+        <xs:sequence>
+          <xs:element name="TrailerType" type="xs:string"/>
+          <xs:element name="StartDate" type="xs:dateTime"/>
+          <xs:element name="EndDate" type="xs:dateTime" nillable="true"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="UnderfillingsLine">
+        <xs:sequence>
+          <xs:element name="Number" type="xs:string" nillable="true"/>
+          <xs:element name="DateCAN" type="xs:dateTime" nillable="true"/>
+          <xs:element name="PlaceCAN" type="xs:string" nillable="true"/>
+          <xs:element name="QuantityCAN" type="xs:float" nillable="true"/>
+          <xs:element name="PlaceBase" type="xs:string" nillable="true"/>
+          <xs:element name="DateBase" type="xs:dateTime" nillable="true"/>
+          <xs:element name="QuantityBase" type="xs:float" nillable="true"/>
+          <xs:element name="Underfilling" type="xs:float" nillable="true"/>
+          <xs:element name="FuelType" type="xs:string" nillable="true"/>
+        </xs:sequence>
+      </xs:complexType>
+      <xs:complexType name="WriteItemCostResult">
+        <xs:sequence>
+          <xs:element name="Ok" type="xs:boolean"/>
+          <xs:element name="ErrorMessage" type="xs:string"/>
+        </xs:sequence>
+      </xs:complexType>
+    </xs:schema>
+    <xs:schema targetNamespace="http://monopoly.su/" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xs1="http://monopoly.su/Order" xmlns:xs2="http://monopoly.su/">
+      <xs:import namespace="http://monopoly.su/Order"/>
+      <xs:element name="SaveGPS">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="guid" type="xs:string"/>
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="id" type="xs:int"/>
+            <xs:element name="phone" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="SaveGPSResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="return" type="xs1:MethodResult"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="WriteTruckGpsLink">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="linkRowId" type="xs:string"/>
+            <xs:element name="transportId" type="xs:string"/>
+            <xs:element name="gpsNavId" type="xs:string"/>
+            <xs:element name="startDate" type="xs:dateTime"/>
+            <xs:element name="delete" type="xs:boolean"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="WriteTruckGpsLinkResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="return" type="xs1:MethodResult"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="WriteItemCost">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="id" type="xs:string"/>
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="delete" type="xs:boolean"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="WriteItemCostResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="return" type="xs1:WriteItemCostResult"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="WriteTruckTrailerLink">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="linkRowId" type="xs:string"/>
+            <xs:element name="truckId" type="xs:string"/>
+            <xs:element name="trailerId" type="xs:string"/>
+            <xs:element name="startDate" type="xs:dateTime"/>
+            <xs:element name="endDate" type="xs:dateTime" nillable="true"/>
+            <xs:element name="delete" type="xs:boolean"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="WriteTruckTrailerLinkResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="return" type="xs1:MethodResult"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="WriteTruckDriverLink">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="transportId" type="xs:string"/>
+            <xs:element name="driverZupId" type="xs:string"/>
+            <xs:element name="delete" type="xs:boolean"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="WriteTruckDriverLinkResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="return" type="xs1:MethodResult"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GetDriverTaskResult">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="snils" type="xs:string"/>
+            <xs:element name="answerTaskTime" type="xs:dateTime"/>
+            <xs:element name="expensesItemGuid" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GetDriverTaskResultResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="return" type="xs1:GetDriverTaskResultMethodResult"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="RequestForWaybill">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Number" type="xs:string"/>
+            <xs:element name="Date" type="xs:dateTime"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="RequestForWaybillResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="return" type="xs1:MethodResult"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="CreateDTP">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Time" type="xs:dateTime"/>
+            <xs:element name="TransportId" type="xs:string"/>
+            <xs:element name="DriverId" type="xs:string"/>
+            <xs:element name="Point" type="xs:string"/>
+            <xs:element name="Description" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="CreateDTPResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="return" type="xs1:CreateDTPMethodResult"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GetRepairOrderFactDates">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="RepairOrderKey" type="xs:string"/>
+            <xs:element name="MomentFromFact" type="xs:dateTime" nillable="true"/>
+            <xs:element name="MomentToFact" type="xs:dateTime" nillable="true"/>
+            <xs:element name="MomentFromFactError" type="xs:boolean" nillable="true"/>
+            <xs:element name="MomentToFactError" type="xs:boolean" nillable="true"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GetRepairOrderFactDatesResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="return" type="xs1:MethodResult"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GetRepairOrderAgreement">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="RepairOrderKey" type="xs:string"/>
+            <xs:element name="StartDate" type="xs:dateTime"/>
+            <xs:element name="AgreementValue" type="xs:boolean" nillable="true"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GetRepairOrderAgreementResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="return" type="xs1:MethodResult"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="WritePersonZup">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="PersonalInfo" type="xs:string"/>
+            <xs:element name="PassportData" type="xs:string"/>
+            <xs:element name="ContactInfo" type="xs:string"/>
+            <xs:element name="SNP" type="xs:string"/>
+            <xs:element name="AddititionalInfo" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="WritePersonZupResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="return" type="xs1:MethodResult"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="WriteEmployeeZup">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="PersonalInfo" type="xs:string"/>
+            <xs:element name="DocumentsInfo" type="xs:string"/>
+            <xs:element name="EmployeeInfo" type="xs:string"/>
+            <xs:element name="AddititionalInfo" type="xs:string"/>
+            <xs:element name="PassportlInfo" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="WriteEmployeeZupResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="return" type="xs1:MethodResult"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GetTransportInformation">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Number" type="xs:string"/>
+            <xs:element name="StartDate" type="xs:dateTime"/>
+            <xs:element name="EndDate" type="xs:dateTime"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GetTransportInformationResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="return" type="xs1:GetTransportInformationMethodResult"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GetFullTransportInformation">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="Number" type="xs:string" nillable="true"/>
+            <xs:element name="Document" type="xs:string" nillable="true"/>
+            <xs:element name="Moment" type="xs:dateTime"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GetFullTransportInformationResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="return" type="xs1:GetFullTransportInformationMethodResult"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GetTimeSheet">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="StartDate" type="xs:dateTime"/>
+            <xs:element name="EndDate" type="xs:dateTime"/>
+            <xs:element name="Employers" type="xs:string"/>
+            <xs:element name="ValueWork" type="xs:string" nillable="true"/>
+            <xs:element name="ValueRest" type="xs:string" nillable="true"/>
+            <xs:element name="PeriodUnworkingEmpty" type="xs:boolean" nillable="true"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GetTimeSheetResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="return" type="xs1:GetTimeSheetMethodResult"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GetAnswersForTasksOfFuelCostOverrun">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="WaybillId" type="xs:string"/>
+            <xs:element name="FuelOverrunQuestions" type="xs1:FuelOverrunQuestions"/>
+            <xs:element name="User" type="xs:string"/>
+            <xs:element name="XMLBody" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GetAnswersForTasksOfFuelCostOverrunResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="return" type="xs1:MethodResult"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GetWaybillInformation">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="id" type="xs:string"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GetWaybillInformationResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element name="return" type="xs1:GetWaybillInformationResult"/>
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:schema>
+  </types>
+  <message name="SaveGPSRequestMessage">
+    <part name="parameters" element="tns:SaveGPS"/>
+  </message>
+  <message name="SaveGPSResponseMessage">
+    <part name="parameters" element="tns:SaveGPSResponse"/>
+  </message>
+  <message name="WriteTruckGpsLinkRequestMessage">
+    <part name="parameters" element="tns:WriteTruckGpsLink"/>
+  </message>
+  <message name="WriteTruckGpsLinkResponseMessage">
+    <part name="parameters" element="tns:WriteTruckGpsLinkResponse"/>
+  </message>
+  <message name="WriteItemCostRequestMessage">
+    <part name="parameters" element="tns:WriteItemCost"/>
+  </message>
+  <message name="WriteItemCostResponseMessage">
+    <part name="parameters" element="tns:WriteItemCostResponse"/>
+  </message>
+  <message name="WriteTruckTrailerLinkRequestMessage">
+    <part name="parameters" element="tns:WriteTruckTrailerLink"/>
+  </message>
+  <message name="WriteTruckTrailerLinkResponseMessage">
+    <part name="parameters" element="tns:WriteTruckTrailerLinkResponse"/>
+  </message>
+  <message name="WriteTruckDriverLinkRequestMessage">
+    <part name="parameters" element="tns:WriteTruckDriverLink"/>
+  </message>
+  <message name="WriteTruckDriverLinkResponseMessage">
+    <part name="parameters" element="tns:WriteTruckDriverLinkResponse"/>
+  </message>
+  <message name="GetDriverTaskResultRequestMessage">
+    <part name="parameters" element="tns:GetDriverTaskResult"/>
+  </message>
+  <message name="GetDriverTaskResultResponseMessage">
+    <part name="parameters" element="tns:GetDriverTaskResultResponse"/>
+  </message>
+  <message name="RequestForWaybillRequestMessage">
+    <part name="parameters" element="tns:RequestForWaybill"/>
+  </message>
+  <message name="RequestForWaybillResponseMessage">
+    <part name="parameters" element="tns:RequestForWaybillResponse"/>
+  </message>
+  <message name="CreateDTPRequestMessage">
+    <part name="parameters" element="tns:CreateDTP"/>
+  </message>
+  <message name="CreateDTPResponseMessage">
+    <part name="parameters" element="tns:CreateDTPResponse"/>
+  </message>
+  <message name="GetRepairOrderFactDatesRequestMessage">
+    <part name="parameters" element="tns:GetRepairOrderFactDates"/>
+  </message>
+  <message name="GetRepairOrderFactDatesResponseMessage">
+    <part name="parameters" element="tns:GetRepairOrderFactDatesResponse"/>
+  </message>
+  <message name="GetRepairOrderAgreementRequestMessage">
+    <part name="parameters" element="tns:GetRepairOrderAgreement"/>
+  </message>
+  <message name="GetRepairOrderAgreementResponseMessage">
+    <part name="parameters" element="tns:GetRepairOrderAgreementResponse"/>
+  </message>
+  <message name="WritePersonZupRequestMessage">
+    <part name="parameters" element="tns:WritePersonZup"/>
+  </message>
+  <message name="WritePersonZupResponseMessage">
+    <part name="parameters" element="tns:WritePersonZupResponse"/>
+  </message>
+  <message name="WriteEmployeeZupRequestMessage">
+    <part name="parameters" element="tns:WriteEmployeeZup"/>
+  </message>
+  <message name="WriteEmployeeZupResponseMessage">
+    <part name="parameters" element="tns:WriteEmployeeZupResponse"/>
+  </message>
+  <message name="GetTransportInformationRequestMessage">
+    <part name="parameters" element="tns:GetTransportInformation"/>
+  </message>
+  <message name="GetTransportInformationResponseMessage">
+    <part name="parameters" element="tns:GetTransportInformationResponse"/>
+  </message>
+  <message name="GetFullTransportInformationRequestMessage">
+    <part name="parameters" element="tns:GetFullTransportInformation"/>
+  </message>
+  <message name="GetFullTransportInformationResponseMessage">
+    <part name="parameters" element="tns:GetFullTransportInformationResponse"/>
+  </message>
+  <message name="GetTimeSheetRequestMessage">
+    <part name="parameters" element="tns:GetTimeSheet"/>
+  </message>
+  <message name="GetTimeSheetResponseMessage">
+    <part name="parameters" element="tns:GetTimeSheetResponse"/>
+  </message>
+  <message name="GetAnswersForTasksOfFuelCostOverrunRequestMessage">
+    <part name="parameters" element="tns:GetAnswersForTasksOfFuelCostOverrun"/>
+  </message>
+  <message name="GetAnswersForTasksOfFuelCostOverrunResponseMessage">
+    <part name="parameters" element="tns:GetAnswersForTasksOfFuelCostOverrunResponse"/>
+  </message>
+  <message name="GetWaybillInformationRequestMessage">
+    <part name="parameters" element="tns:GetWaybillInformation"/>
+  </message>
+  <message name="GetWaybillInformationResponseMessage">
+    <part name="parameters" element="tns:GetWaybillInformationResponse"/>
+  </message>
+  <portType name="WebMonoPortType">
+    <operation name="SaveGPS">
+      <input message="tns:SaveGPSRequestMessage"/>
+      <output message="tns:SaveGPSResponseMessage"/>
+    </operation>
+    <operation name="WriteTruckGpsLink">
+      <input message="tns:WriteTruckGpsLinkRequestMessage"/>
+      <output message="tns:WriteTruckGpsLinkResponseMessage"/>
+    </operation>
+    <operation name="WriteItemCost">
+      <input message="tns:WriteItemCostRequestMessage"/>
+      <output message="tns:WriteItemCostResponseMessage"/>
+    </operation>
+    <operation name="WriteTruckTrailerLink">
+      <input message="tns:WriteTruckTrailerLinkRequestMessage"/>
+      <output message="tns:WriteTruckTrailerLinkResponseMessage"/>
+    </operation>
+    <operation name="WriteTruckDriverLink">
+      <input message="tns:WriteTruckDriverLinkRequestMessage"/>
+      <output message="tns:WriteTruckDriverLinkResponseMessage"/>
+    </operation>
+    <operation name="GetDriverTaskResult">
+      <input message="tns:GetDriverTaskResultRequestMessage"/>
+      <output message="tns:GetDriverTaskResultResponseMessage"/>
+    </operation>
+    <operation name="RequestForWaybill">
+      <input message="tns:RequestForWaybillRequestMessage"/>
+      <output message="tns:RequestForWaybillResponseMessage"/>
+    </operation>
+    <operation name="CreateDTP">
+      <input message="tns:CreateDTPRequestMessage"/>
+      <output message="tns:CreateDTPResponseMessage"/>
+    </operation>
+    <operation name="GetRepairOrderFactDates">
+      <input message="tns:GetRepairOrderFactDatesRequestMessage"/>
+      <output message="tns:GetRepairOrderFactDatesResponseMessage"/>
+    </operation>
+    <operation name="GetRepairOrderAgreement">
+      <input message="tns:GetRepairOrderAgreementRequestMessage"/>
+      <output message="tns:GetRepairOrderAgreementResponseMessage"/>
+    </operation>
+    <operation name="WritePersonZup">
+      <input message="tns:WritePersonZupRequestMessage"/>
+      <output message="tns:WritePersonZupResponseMessage"/>
+    </operation>
+    <operation name="WriteEmployeeZup">
+      <input message="tns:WriteEmployeeZupRequestMessage"/>
+      <output message="tns:WriteEmployeeZupResponseMessage"/>
+    </operation>
+    <operation name="GetTransportInformation">
+      <input message="tns:GetTransportInformationRequestMessage"/>
+      <output message="tns:GetTransportInformationResponseMessage"/>
+    </operation>
+    <operation name="GetFullTransportInformation">
+      <input message="tns:GetFullTransportInformationRequestMessage"/>
+      <output message="tns:GetFullTransportInformationResponseMessage"/>
+    </operation>
+    <operation name="GetTimeSheet">
+      <input message="tns:GetTimeSheetRequestMessage"/>
+      <output message="tns:GetTimeSheetResponseMessage"/>
+    </operation>
+    <operation name="GetAnswersForTasksOfFuelCostOverrun">
+      <input message="tns:GetAnswersForTasksOfFuelCostOverrunRequestMessage"/>
+      <output message="tns:GetAnswersForTasksOfFuelCostOverrunResponseMessage"/>
+    </operation>
+    <operation name="GetWaybillInformation">
+      <input message="tns:GetWaybillInformationRequestMessage"/>
+      <output message="tns:GetWaybillInformationResponseMessage"/>
+    </operation>
+  </portType>
+  <binding name="WebMonoSoapBinding" type="tns:WebMonoPortType">
+    <soapbind:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <operation name="SaveGPS">
+      <soapbind:operation style="document" soapAction="http://monopoly.su/#WebMono:SaveGPS"/>
+      <input>
+        <soapbind:body use="literal"/>
+      </input>
+      <output>
+        <soapbind:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="WriteTruckGpsLink">
+      <soapbind:operation style="document" soapAction="http://monopoly.su/#WebMono:WriteTruckGpsLink"/>
+      <input>
+        <soapbind:body use="literal"/>
+      </input>
+      <output>
+        <soapbind:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="WriteItemCost">
+      <soapbind:operation style="document" soapAction="http://monopoly.su/#WebMono:WriteItemCost"/>
+      <input>
+        <soapbind:body use="literal"/>
+      </input>
+      <output>
+        <soapbind:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="WriteTruckTrailerLink">
+      <soapbind:operation style="document" soapAction="http://monopoly.su/#WebMono:WriteTruckTrailerLink"/>
+      <input>
+        <soapbind:body use="literal"/>
+      </input>
+      <output>
+        <soapbind:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="WriteTruckDriverLink">
+      <soapbind:operation style="document" soapAction="http://monopoly.su/#WebMono:WriteTruckDriverLink"/>
+      <input>
+        <soapbind:body use="literal"/>
+      </input>
+      <output>
+        <soapbind:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="GetDriverTaskResult">
+      <soapbind:operation style="document" soapAction="http://monopoly.su/#WebMono:GetDriverTaskResult"/>
+      <input>
+        <soapbind:body use="literal"/>
+      </input>
+      <output>
+        <soapbind:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="RequestForWaybill">
+      <soapbind:operation style="document" soapAction="http://monopoly.su/#WebMono:RequestForWaybill"/>
+      <input>
+        <soapbind:body use="literal"/>
+      </input>
+      <output>
+        <soapbind:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="CreateDTP">
+      <soapbind:operation style="document" soapAction="http://monopoly.su/#WebMono:CreateDTP"/>
+      <input>
+        <soapbind:body use="literal"/>
+      </input>
+      <output>
+        <soapbind:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="GetRepairOrderFactDates">
+      <soapbind:operation style="document" soapAction="http://monopoly.su/#WebMono:GetRepairOrderFactDates"/>
+      <input>
+        <soapbind:body use="literal"/>
+      </input>
+      <output>
+        <soapbind:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="GetRepairOrderAgreement">
+      <soapbind:operation style="document" soapAction="http://monopoly.su/#WebMono:GetRepairOrderAgreement"/>
+      <input>
+        <soapbind:body use="literal"/>
+      </input>
+      <output>
+        <soapbind:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="WritePersonZup">
+      <soapbind:operation style="document" soapAction="http://monopoly.su/#WebMono:WritePersonZup"/>
+      <input>
+        <soapbind:body use="literal"/>
+      </input>
+      <output>
+        <soapbind:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="WriteEmployeeZup">
+      <soapbind:operation style="document" soapAction="http://monopoly.su/#WebMono:WriteEmployeeZup"/>
+      <input>
+        <soapbind:body use="literal"/>
+      </input>
+      <output>
+        <soapbind:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="GetTransportInformation">
+      <soapbind:operation style="document" soapAction="http://monopoly.su/#WebMono:GetTransportInformation"/>
+      <input>
+        <soapbind:body use="literal"/>
+      </input>
+      <output>
+        <soapbind:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="GetFullTransportInformation">
+      <soapbind:operation style="document" soapAction="http://monopoly.su/#WebMono:GetFullTransportInformation"/>
+      <input>
+        <soapbind:body use="literal"/>
+      </input>
+      <output>
+        <soapbind:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="GetTimeSheet">
+      <soapbind:operation style="document" soapAction="http://monopoly.su/#WebMono:GetTimeSheet"/>
+      <input>
+        <soapbind:body use="literal"/>
+      </input>
+      <output>
+        <soapbind:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="GetAnswersForTasksOfFuelCostOverrun">
+      <soapbind:operation style="document" soapAction="http://monopoly.su/#WebMono:GetAnswersForTasksOfFuelCostOverrun"/>
+      <input>
+        <soapbind:body use="literal"/>
+      </input>
+      <output>
+        <soapbind:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="GetWaybillInformation">
+      <soapbind:operation style="document" soapAction="http://monopoly.su/#WebMono:GetWaybillInformation"/>
+      <input>
+        <soapbind:body use="literal"/>
+      </input>
+      <output>
+        <soapbind:body use="literal"/>
+      </output>
+    </operation>
+  </binding>
+  <binding name="WebMonoSoap12Binding" type="tns:WebMonoPortType">
+    <soap12bind:binding style="document" transport="http://schemas.xmlsoap.org/soap/http"/>
+    <operation name="SaveGPS">
+      <soap12bind:operation style="document" soapAction="http://monopoly.su/#WebMono:SaveGPS"/>
+      <input>
+        <soap12bind:body use="literal"/>
+      </input>
+      <output>
+        <soap12bind:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="WriteTruckGpsLink">
+      <soap12bind:operation style="document" soapAction="http://monopoly.su/#WebMono:WriteTruckGpsLink"/>
+      <input>
+        <soap12bind:body use="literal"/>
+      </input>
+      <output>
+        <soap12bind:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="WriteItemCost">
+      <soap12bind:operation style="document" soapAction="http://monopoly.su/#WebMono:WriteItemCost"/>
+      <input>
+        <soap12bind:body use="literal"/>
+      </input>
+      <output>
+        <soap12bind:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="WriteTruckTrailerLink">
+      <soap12bind:operation style="document" soapAction="http://monopoly.su/#WebMono:WriteTruckTrailerLink"/>
+      <input>
+        <soap12bind:body use="literal"/>
+      </input>
+      <output>
+        <soap12bind:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="WriteTruckDriverLink">
+      <soap12bind:operation style="document" soapAction="http://monopoly.su/#WebMono:WriteTruckDriverLink"/>
+      <input>
+        <soap12bind:body use="literal"/>
+      </input>
+      <output>
+        <soap12bind:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="GetDriverTaskResult">
+      <soap12bind:operation style="document" soapAction="http://monopoly.su/#WebMono:GetDriverTaskResult"/>
+      <input>
+        <soap12bind:body use="literal"/>
+      </input>
+      <output>
+        <soap12bind:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="RequestForWaybill">
+      <soap12bind:operation style="document" soapAction="http://monopoly.su/#WebMono:RequestForWaybill"/>
+      <input>
+        <soap12bind:body use="literal"/>
+      </input>
+      <output>
+        <soap12bind:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="CreateDTP">
+      <soap12bind:operation style="document" soapAction="http://monopoly.su/#WebMono:CreateDTP"/>
+      <input>
+        <soap12bind:body use="literal"/>
+      </input>
+      <output>
+        <soap12bind:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="GetRepairOrderFactDates">
+      <soap12bind:operation style="document" soapAction="http://monopoly.su/#WebMono:GetRepairOrderFactDates"/>
+      <input>
+        <soap12bind:body use="literal"/>
+      </input>
+      <output>
+        <soap12bind:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="GetRepairOrderAgreement">
+      <soap12bind:operation style="document" soapAction="http://monopoly.su/#WebMono:GetRepairOrderAgreement"/>
+      <input>
+        <soap12bind:body use="literal"/>
+      </input>
+      <output>
+        <soap12bind:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="WritePersonZup">
+      <soap12bind:operation style="document" soapAction="http://monopoly.su/#WebMono:WritePersonZup"/>
+      <input>
+        <soap12bind:body use="literal"/>
+      </input>
+      <output>
+        <soap12bind:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="WriteEmployeeZup">
+      <soap12bind:operation style="document" soapAction="http://monopoly.su/#WebMono:WriteEmployeeZup"/>
+      <input>
+        <soap12bind:body use="literal"/>
+      </input>
+      <output>
+        <soap12bind:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="GetTransportInformation">
+      <soap12bind:operation style="document" soapAction="http://monopoly.su/#WebMono:GetTransportInformation"/>
+      <input>
+        <soap12bind:body use="literal"/>
+      </input>
+      <output>
+        <soap12bind:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="GetFullTransportInformation">
+      <soap12bind:operation style="document" soapAction="http://monopoly.su/#WebMono:GetFullTransportInformation"/>
+      <input>
+        <soap12bind:body use="literal"/>
+      </input>
+      <output>
+        <soap12bind:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="GetTimeSheet">
+      <soap12bind:operation style="document" soapAction="http://monopoly.su/#WebMono:GetTimeSheet"/>
+      <input>
+        <soap12bind:body use="literal"/>
+      </input>
+      <output>
+        <soap12bind:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="GetAnswersForTasksOfFuelCostOverrun">
+      <soap12bind:operation style="document" soapAction="http://monopoly.su/#WebMono:GetAnswersForTasksOfFuelCostOverrun"/>
+      <input>
+        <soap12bind:body use="literal"/>
+      </input>
+      <output>
+        <soap12bind:body use="literal"/>
+      </output>
+    </operation>
+    <operation name="GetWaybillInformation">
+      <soap12bind:operation style="document" soapAction="http://monopoly.su/#WebMono:GetWaybillInformation"/>
+      <input>
+        <soap12bind:body use="literal"/>
+      </input>
+      <output>
+        <soap12bind:body use="literal"/>
+      </output>
+    </operation>
+  </binding>
+  <service name="WebMono">
+    <port name="WebMonoSoap" binding="tns:WebMonoSoapBinding">
+      <documentation>
+        <wsi:Claim conformsTo="http://ws-i.org/profiles/basic/1.1" xmlns:wsi="http://ws-i.org/schemas/conformanceClaim/"/>
+      </documentation>
+      <soapbind:address location="http://dev-1csrv-01/skachkov_uat_2_dev/ws/wsMono.1cws"/>
+    </port>
+    <port name="WebMonoSoap12" binding="tns:WebMonoSoap12Binding">
+      <soap12bind:address location="http://dev-1csrv-01/skachkov_uat_2_dev/ws/wsMono.1cws"/>
+    </port>
+  </service>
+</definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>http://dev-1csrv-01/skachkov_uat_2_dev/ws/wsMono.1cws</con:endpoint></con:endpoints><con:operation id="aaf3d7d6-be93-4ae5-be2b-709d7e09cf9b" isOneWay="false" action="http://monopoly.su/#WebMono:CreateDTP" name="CreateDTP" bindingOperationName="CreateDTP" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="50a34332-b887-4da0-a7e1-803d876d02dd" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://dev-1csrv-01/skachkov_uat_2_dev/ws/wsMono.1cws</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:mon="http://monopoly.su/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <mon:CreateDTP>\r
+         <mon:Time>?</mon:Time>\r
+         <mon:TransportId>?</mon:TransportId>\r
+         <mon:DriverId>?</mon:DriverId>\r
+         <mon:Point>?</mon:Point>\r
+         <mon:Description>?</mon:Description>\r
+      </mon:CreateDTP>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://monopoly.su/WebMonoPortType/CreateDTPRequest"/></con:call></con:operation><con:operation id="40dc009f-61e0-4354-a9a7-2c5290d38958" isOneWay="false" action="http://monopoly.su/#WebMono:GetAnswersForTasksOfFuelCostOverrun" name="GetAnswersForTasksOfFuelCostOverrun" bindingOperationName="GetAnswersForTasksOfFuelCostOverrun" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="b60a839b-673d-4f0a-af0a-377d2299e66d" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://dev-1csrv-01/skachkov_uat_2_dev/ws/wsMono.1cws</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:mon="http://monopoly.su/" xmlns:ord="http://monopoly.su/Order">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <mon:GetAnswersForTasksOfFuelCostOverrun>\r
+         <mon:WaybillId>?</mon:WaybillId>\r
+         <mon:FuelOverrunQuestions>\r
+            <!--Zero or more repetitions:-->\r
+            <ord:FuelOverrunQuestionLine>\r
+               <ord:Reason>?</ord:Reason>\r
+               <ord:Amount>?</ord:Amount>\r
+               <ord:Comment>?</ord:Comment>\r
+            </ord:FuelOverrunQuestionLine>\r
+         </mon:FuelOverrunQuestions>\r
+         <mon:User>?</mon:User>\r
+         <mon:XMLBody>?</mon:XMLBody>\r
+      </mon:GetAnswersForTasksOfFuelCostOverrun>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://monopoly.su/WebMonoPortType/GetAnswersForTasksOfFuelCostOverrunRequest"/></con:call></con:operation><con:operation id="e013eca5-141b-49dd-9d3f-347b5d83a748" isOneWay="false" action="http://monopoly.su/#WebMono:GetDriverTaskResult" name="GetDriverTaskResult" bindingOperationName="GetDriverTaskResult" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="b358953b-b891-4d7b-a35d-e1831c5dcedc" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://dev-1csrv-01/skachkov_uat_2_dev/ws/wsMono.1cws</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:mon="http://monopoly.su/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <mon:GetDriverTaskResult>\r
+         <mon:snils>?</mon:snils>\r
+         <mon:answerTaskTime>?</mon:answerTaskTime>\r
+         <mon:expensesItemGuid>?</mon:expensesItemGuid>\r
+      </mon:GetDriverTaskResult>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://monopoly.su/WebMonoPortType/GetDriverTaskResultRequest"/></con:call></con:operation><con:operation id="49f54635-d540-4038-9833-ff8f4f4286f7" isOneWay="false" action="http://monopoly.su/#WebMono:GetFullTransportInformation" name="GetFullTransportInformation" bindingOperationName="GetFullTransportInformation" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="b6beb1ff-e308-4d37-b620-49204b989644" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://dev-1csrv-01/skachkov_uat_2_dev/ws/wsMono.1cws</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:mon="http://monopoly.su/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <mon:GetFullTransportInformation>\r
+         <mon:Number>?</mon:Number>\r
+         <mon:Document>?</mon:Document>\r
+         <mon:Moment>?</mon:Moment>\r
+      </mon:GetFullTransportInformation>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://monopoly.su/WebMonoPortType/GetFullTransportInformationRequest"/></con:call></con:operation><con:operation id="75708ad6-011d-4ef0-a504-57d12586d00f" isOneWay="false" action="http://monopoly.su/#WebMono:GetRepairOrderAgreement" name="GetRepairOrderAgreement" bindingOperationName="GetRepairOrderAgreement" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="29fc0e36-9c44-4286-af1c-a833ca73de9b" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://dev-1csrv-01/skachkov_uat_2_dev/ws/wsMono.1cws</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:mon="http://monopoly.su/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <mon:GetRepairOrderAgreement>\r
+         <mon:RepairOrderKey>?</mon:RepairOrderKey>\r
+         <mon:StartDate>?</mon:StartDate>\r
+         <mon:AgreementValue>?</mon:AgreementValue>\r
+      </mon:GetRepairOrderAgreement>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://monopoly.su/WebMonoPortType/GetRepairOrderAgreementRequest"/></con:call></con:operation><con:operation id="54cc4364-269c-4bcf-8664-422d945a1130" isOneWay="false" action="http://monopoly.su/#WebMono:GetRepairOrderFactDates" name="GetRepairOrderFactDates" bindingOperationName="GetRepairOrderFactDates" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="46619aa5-9876-42bb-bf4a-f4d4d7953d5a" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://dev-1csrv-01/skachkov_uat_2_dev/ws/wsMono.1cws</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:mon="http://monopoly.su/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <mon:GetRepairOrderFactDates>\r
+         <mon:RepairOrderKey>?</mon:RepairOrderKey>\r
+         <mon:MomentFromFact>?</mon:MomentFromFact>\r
+         <mon:MomentToFact>?</mon:MomentToFact>\r
+         <mon:MomentFromFactError>?</mon:MomentFromFactError>\r
+         <mon:MomentToFactError>?</mon:MomentToFactError>\r
+      </mon:GetRepairOrderFactDates>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://monopoly.su/WebMonoPortType/GetRepairOrderFactDatesRequest"/></con:call></con:operation><con:operation id="8cba07ad-1b5b-415d-8223-2be0ca91ea28" isOneWay="false" action="http://monopoly.su/#WebMono:GetTimeSheet" name="GetTimeSheet" bindingOperationName="GetTimeSheet" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="1cc08630-b1c5-41e8-ba71-5a7b3069d7e1" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://dev-1csrv-01/skachkov_uat_2_dev/ws/wsMono.1cws</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:mon="http://monopoly.su/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <mon:GetTimeSheet>\r
+         <mon:StartDate>?</mon:StartDate>\r
+         <mon:EndDate>?</mon:EndDate>\r
+         <mon:Employers>?</mon:Employers>\r
+         <mon:ValueWork>?</mon:ValueWork>\r
+         <mon:ValueRest>?</mon:ValueRest>\r
+         <mon:PeriodUnworkingEmpty>?</mon:PeriodUnworkingEmpty>\r
+      </mon:GetTimeSheet>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://monopoly.su/WebMonoPortType/GetTimeSheetRequest"/></con:call></con:operation><con:operation id="cb8d65c5-25b5-4c0c-ba55-93634b2f3af4" isOneWay="false" action="http://monopoly.su/#WebMono:GetTransportInformation" name="GetTransportInformation" bindingOperationName="GetTransportInformation" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="34ebe9a9-dbe3-40c1-9f34-a673c16cf814" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://dev-1csrv-01/skachkov_uat_2_dev/ws/wsMono.1cws</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:mon="http://monopoly.su/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <mon:GetTransportInformation>\r
+         <mon:Number>?</mon:Number>\r
+         <mon:StartDate>?</mon:StartDate>\r
+         <mon:EndDate>?</mon:EndDate>\r
+      </mon:GetTransportInformation>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://monopoly.su/WebMonoPortType/GetTransportInformationRequest"/></con:call></con:operation><con:operation id="23126208-0eb0-4a36-8313-6ab0dca28608" isOneWay="false" action="http://monopoly.su/#WebMono:GetWaybillInformation" name="GetWaybillInformation" bindingOperationName="GetWaybillInformation" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="039e1074-9ae7-4ddf-aee7-86fe7f6e819a" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://dev-1csrv-01/skachkov_uat_2_dev/ws/wsMono.1cws</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:mon="http://monopoly.su/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <mon:GetWaybillInformation>\r
+         <mon:id>?</mon:id>\r
+      </mon:GetWaybillInformation>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://monopoly.su/WebMonoPortType/GetWaybillInformationRequest"/></con:call></con:operation><con:operation id="e3c513f4-78af-46b5-8461-a11f3512deae" isOneWay="false" action="http://monopoly.su/#WebMono:RequestForWaybill" name="RequestForWaybill" bindingOperationName="RequestForWaybill" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="d271d5d3-3248-460b-b1f6-e2fc555f2bb7" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://dev-1csrv-01/skachkov_uat_2_dev/ws/wsMono.1cws</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:mon="http://monopoly.su/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <mon:RequestForWaybill>\r
+         <mon:Number>?</mon:Number>\r
+         <mon:Date>?</mon:Date>\r
+      </mon:RequestForWaybill>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://monopoly.su/WebMonoPortType/RequestForWaybillRequest"/></con:call></con:operation><con:operation id="50d8168b-a88f-457e-b1a7-e0b425ab9624" isOneWay="false" action="http://monopoly.su/#WebMono:SaveGPS" name="SaveGPS" bindingOperationName="SaveGPS" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="1ce0153c-4c0a-415a-bae2-fed79916a834" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://dev-1csrv-01/skachkov_uat_2_dev/ws/wsMono.1cws</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:mon="http://monopoly.su/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <mon:SaveGPS>\r
+         <mon:guid>?</mon:guid>\r
+         <mon:name>?</mon:name>\r
+         <mon:id>?</mon:id>\r
+         <mon:phone>?</mon:phone>\r
+      </mon:SaveGPS>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://monopoly.su/WebMonoPortType/SaveGPSRequest"/></con:call></con:operation><con:operation id="922059e6-c383-4a24-9397-a7c89cff1b06" isOneWay="false" action="http://monopoly.su/#WebMono:WriteEmployeeZup" name="WriteEmployeeZup" bindingOperationName="WriteEmployeeZup" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="c379a8d7-65c7-4226-814e-fc0eb4dc9101" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://dev-1csrv-01/skachkov_uat_2_dev/ws/wsMono.1cws</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:mon="http://monopoly.su/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <mon:WriteEmployeeZup>\r
+         <mon:PersonalInfo>?</mon:PersonalInfo>\r
+         <mon:DocumentsInfo>?</mon:DocumentsInfo>\r
+         <mon:EmployeeInfo>?</mon:EmployeeInfo>\r
+         <mon:AddititionalInfo>?</mon:AddititionalInfo>\r
+         <mon:PassportlInfo>?</mon:PassportlInfo>\r
+      </mon:WriteEmployeeZup>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://monopoly.su/WebMonoPortType/WriteEmployeeZupRequest"/></con:call></con:operation><con:operation id="a4badeca-e5d3-4498-bc31-36072fceb61d" isOneWay="false" action="http://monopoly.su/#WebMono:WriteItemCost" name="WriteItemCost" bindingOperationName="WriteItemCost" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="91071e5d-9589-4e98-9d1e-632e073961d4" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://dev-1csrv-01/skachkov_uat_2_dev/ws/wsMono.1cws</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:mon="http://monopoly.su/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <mon:WriteItemCost>\r
+         <mon:id>?</mon:id>\r
+         <mon:name>?</mon:name>\r
+         <mon:delete>?</mon:delete>\r
+      </mon:WriteItemCost>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://monopoly.su/WebMonoPortType/WriteItemCostRequest"/></con:call></con:operation><con:operation id="3a15a56c-5d77-46f2-82d9-36134e5eacc3" isOneWay="false" action="http://monopoly.su/#WebMono:WritePersonZup" name="WritePersonZup" bindingOperationName="WritePersonZup" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="39e8a016-80de-4af2-b740-cca2351340fd" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://dev-1csrv-01/skachkov_uat_2_dev/ws/wsMono.1cws</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:mon="http://monopoly.su/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <mon:WritePersonZup>\r
+         <mon:PersonalInfo>?</mon:PersonalInfo>\r
+         <mon:PassportData>?</mon:PassportData>\r
+         <mon:ContactInfo>?</mon:ContactInfo>\r
+         <mon:SNP>?</mon:SNP>\r
+         <mon:AddititionalInfo>?</mon:AddititionalInfo>\r
+      </mon:WritePersonZup>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://monopoly.su/WebMonoPortType/WritePersonZupRequest"/></con:call></con:operation><con:operation id="1604ac17-50d7-4755-b75e-92fd1d1ffb2f" isOneWay="false" action="http://monopoly.su/#WebMono:WriteTruckDriverLink" name="WriteTruckDriverLink" bindingOperationName="WriteTruckDriverLink" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="f9de5da5-0f35-42bd-90e6-ad9c652631cd" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://dev-1csrv-01/skachkov_uat_2_dev/ws/wsMono.1cws</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:mon="http://monopoly.su/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <mon:WriteTruckDriverLink>\r
+         <mon:transportId>?</mon:transportId>\r
+         <mon:driverZupId>?</mon:driverZupId>\r
+         <mon:delete>?</mon:delete>\r
+      </mon:WriteTruckDriverLink>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://monopoly.su/WebMonoPortType/WriteTruckDriverLinkRequest"/></con:call></con:operation><con:operation id="af3d3c3c-c1a7-44f4-a721-f9cd405e8773" isOneWay="false" action="http://monopoly.su/#WebMono:WriteTruckGpsLink" name="WriteTruckGpsLink" bindingOperationName="WriteTruckGpsLink" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="a3ecd471-f6b0-4d05-8475-fe559df98509" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://dev-1csrv-01/skachkov_uat_2_dev/ws/wsMono.1cws</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:mon="http://monopoly.su/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <mon:WriteTruckGpsLink>\r
+         <mon:linkRowId>?</mon:linkRowId>\r
+         <mon:transportId>?</mon:transportId>\r
+         <mon:gpsNavId>?</mon:gpsNavId>\r
+         <mon:startDate>?</mon:startDate>\r
+         <mon:delete>?</mon:delete>\r
+      </mon:WriteTruckGpsLink>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://monopoly.su/WebMonoPortType/WriteTruckGpsLinkRequest"/></con:call></con:operation><con:operation id="67cf903b-70a5-4515-8e1e-8db9445dadd5" isOneWay="false" action="http://monopoly.su/#WebMono:WriteTruckTrailerLink" name="WriteTruckTrailerLink" bindingOperationName="WriteTruckTrailerLink" type="Request-Response" inputName="" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="8acd6e9c-e50b-451e-b066-8ee187ed6b28" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>http://dev-1csrv-01/skachkov_uat_2_dev/ws/wsMono.1cws</con:endpoint><con:request><![CDATA[<soap:Envelope xmlns:soap="http://www.w3.org/2003/05/soap-envelope" xmlns:mon="http://monopoly.su/">\r
+   <soap:Header/>\r
+   <soap:Body>\r
+      <mon:WriteTruckTrailerLink>\r
+         <mon:linkRowId>?</mon:linkRowId>\r
+         <mon:truckId>?</mon:truckId>\r
+         <mon:trailerId>?</mon:trailerId>\r
+         <mon:startDate>?</mon:startDate>\r
+         <mon:endDate>?</mon:endDate>\r
+         <mon:delete>?</mon:delete>\r
+      </mon:WriteTruckTrailerLink>\r
+   </soap:Body>\r
+</soap:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://monopoly.su/WebMonoPortType/WriteTruckTrailerLinkRequest"/></con:call></con:operation></con:interface><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
