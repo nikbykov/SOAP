@@ -1,4 +1,0 @@
-SOAP = WSDL
-REST = Swagger UI
-
-test
